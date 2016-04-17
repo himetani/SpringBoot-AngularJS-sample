@@ -1,11 +1,13 @@
 'use strict';
 
-var app = angular.module('myApp', []);
+var app = angular.module('myApp', ['ui.router', 'ngRoute']);
 
-/*
 app.config(function($locationProvider, $stateProvider, $urlRouterProvider) {
 
-    $locationProvider.html5Mode(true);
+    $locationProvider.html5Mode({
+        enabled: true,
+        requireBase: false
+    });
 
     $stateProvider
         .state('index', {
@@ -24,4 +26,3 @@ app.config(function($locationProvider, $stateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise('/');
 
 });
-*/

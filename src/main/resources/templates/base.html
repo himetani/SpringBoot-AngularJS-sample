@@ -4,7 +4,10 @@
         <title>SpringBoot x AngularJS</title>
     </head>
     <body>
+        <ui-view></ui-view>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.3/angular-route.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js"></script>
         <script th:src="${'js/app.js'}"></script>
         <script th:src="${'js/helloController.js'}"></script>
         <script th:src="${'js/indexController.js'}"></script>
