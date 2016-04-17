@@ -1,7 +1,8 @@
 'use strict';
 
-var app = angular.module('App', ['ui.router', 'ngRoute']);
+var app = angular.module('App', []);
 
+/*
 app.config(function($locationProvider, $stateProvider, $urlRouterProvider) {
 
     $locationProvider.html5Mode(true);
@@ -23,3 +24,4 @@ app.config(function($locationProvider, $stateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise('/');
 
 });
+*/

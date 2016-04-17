@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html ng-app="App">
-<head>
+<html>
+<head xmlns:th="http://www.thymeleaf.org">
     <title>SpringBoot x AngularJS</title>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular.min.js"></script>
 </head>
 <body>
 <ng-view></ng-view>
-<script type="text/ng-template" src="app.js"></script>
-<script type="text/ng-template" src="helloController.js"></script>
-<script type="text/ng-template" src="indexController.js"></script>
+<script src="../static/app.js" th:src="${'js/app.js'}"></script>
+<script src="../static/helloController.js" th:src="${'js/helloController.js'}"></script>
+<script src="../static/indexController.js" th:src="${'js/indexController.js'}"></script>
 </body>
 </html>
