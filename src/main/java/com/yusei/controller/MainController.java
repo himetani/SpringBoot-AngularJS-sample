@@ -9,11 +9,16 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class MainController {
     @RequestMapping(value = "/", method = RequestMethod.GET)
-    public String index() {
+    public String base() {
         return "base";
     }
 
-    @RequestMapping(value = "/hello", method = RequestMethod.GET)
+    @RequestMapping(value = "/templates/index", method = RequestMethod.GET)
+    public String index() {
+        return "index";
+    }
+
+    @RequestMapping(value = "/templates/hello", method = RequestMethod.GET)
     public String hello() {
         return "hello";
     }
